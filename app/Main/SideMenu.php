@@ -37,11 +37,6 @@ class SideMenu
                             ],
                         ],
                     ],
-                    'agensi' => [
-                        'title' => 'Agensi',
-                        'route_name' => 'dashboard-overview-1',
-                        'params' => [],
-                    ],
                 ],
             ],
             'devider',                    

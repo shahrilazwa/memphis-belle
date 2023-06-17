@@ -34,8 +34,8 @@ class AuthController extends Controller
         error_log('Logging In...');
         if (!\Auth::attempt(
             [
-            'nokp' => $request->nokp,
-            'password' => $request->password
+                'nokp' => $request->nokp,
+                'password' => $request->password
             ]
         )
         ) {

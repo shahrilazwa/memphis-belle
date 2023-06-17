@@ -1,10 +1,6 @@
-# MyGPI
+# ePengisian
 ## Developer Team
-1. Elisah Satim
-2. Farid Iqbal bin Ibrahim
-3. Roth Camdessus Anak Robert
-4. Siti Aminah Hanum binti Che Kob
-5. Mazri bin Abu Hassan
+1. Shahril Azwa
 
 ## Requirement
 - PHP 8.1 and above
@@ -14,18 +10,16 @@
 
 ## Developer Installation
 1. Clone the project.
-    ```
-    git clone https://git.osdec.gov.my/mygpi/mygpi-enigma.git
-    ```
+
 2. Duplicate `.env.example` file and give the file name as `.env`.
     ```
     cp .env.example .env
     ```
-3. Create a database name `mygpi-enigma` on your MySQL Server.
+3. Create a database name `memphisbelle` on your MySQL Server.
 
 4. Update `.env` file with your local DB connection information.
     ```
-    DB_DATABASE=mygpi-v2
+    DB_DATABASE=memphisbelle
     DB_USERNAME=root
     DB_PASSWORD=password
     ```

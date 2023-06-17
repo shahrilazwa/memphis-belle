@@ -16,12 +16,6 @@ Route::controller(AuthController::class)->middleware('loggedin')->group(function
 Route::middleware('auth')->group(function() {
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
-    Route::prefix('pengurusan')->group(function () {
-        // Route::get('agensi', 'PengurusanAgensiController@list')->name('pengurusan-agensi');
-        Route::get('agensi', 'PageController@pengurusanAgensi')->name('pengurusan-agensi');
-    });
-
-
     Route::controller(PageController::class)->group(function() {
         Route::get('dashboard-overview-1-page', 'dashboardOverview1')->name('dashboard-overview-1');
         Route::get('dashboard-overview-2-page', 'dashboardOverview2')->name('dashboard-overview-2');
