@@ -11,8 +11,7 @@ trait UuidTrait
         
         static::creating(
             function ($model) {
-                // $model->{$model->getKeyName()} = Uuid::generate()->string;
-                $model->uuid = 'ABC';
+                $model->{$model->getKeyName()} = Uuid::generate()->string;
                 return $model;
             }
         );
