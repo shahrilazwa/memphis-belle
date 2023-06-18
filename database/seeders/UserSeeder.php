@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
 use App\Models\User;
-use Webpatser\Uuid\Uuid;
 
 class UserSeeder extends Seeder
 {
@@ -26,7 +25,6 @@ class UserSeeder extends Seeder
             $obj->create([
                 'nama' => $data[0],
                 'nokp' => $data[1],
-                'uuid' => Str::uuid()->toString(),
                 'emel' => $data[2],
                 'email_verified_at' => now(),
                 'notel' => $data[3],
